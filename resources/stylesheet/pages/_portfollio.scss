@@ -1,0 +1,133 @@
+.portfollio-main-body{
+    display: block;
+    width: 100%;
+    .fa-briefcase{
+        color: $secondary-color;
+    }
+    .main-content{
+        display: block;
+        width: calc(100% - 400px);
+        float: left;
+        margin-left: 400px;
+        @media only screen and (max-width: 1200px) {
+            width: 100%;
+            margin: 0;
+        }
+        .full-box{
+            display: block;
+            width: 100%;
+            .text-box{
+                display: block;
+                width: 100%;
+                padding-bottom: 100px;
+                .portfollio-btn{
+                    font-size: 14px;
+                    color: #bbb;
+                    padding: 10px 5px;
+                    background-color: #777;
+                    width: 95px;
+                }
+                .portfollio-head{
+                    color: $global-color!important;
+                    font-weight: 600;
+                    padding-top: 15px ;
+                }
+            }
+            .full-img-box-grid{
+                display: grid;
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 45px 45px;
+                @media only screen and (max-width: 700px) {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                }
+                .img-box{
+                    width: 100%;
+                    height: 500px;
+                    display: block;
+                    -webkit-box-shadow: 0 0 11px 0 #777777;
+                    box-shadow: 0 0 11px 0 #777777;
+                    overflow: hidden;
+                    position: relative;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    transition: 500ms;
+                    @media only screen and (max-width: 1080px){
+                        height: 400px;
+                    }
+                    @media only screen and (max-width: 880px) {
+                        height: 350px;
+                    }
+                    @media only screen and (max-width: 700px) {
+                        height: 300px;
+                    }
+                    @media only screen and (max-width: 340px){
+                        height: 240px;
+                    }
+                    .abusate-transparent{
+                        position: absolute;
+                        width: 100%;
+                        height: 500px;
+                        display: block;
+                        background-color: #777777;
+                        opacity: 0;
+                        top: 0;
+                        left: 0;
+                        transition: 500ms;
+                    }
+                    .portfolio-title {
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                        transition: 500ms;
+                        color: $global-color;
+                        transform: translateY(-300px);
+                        position: relative;
+                        z-index: 2;
+                        font-size: 70px;
+                        font-weight: bold;
+                        @media only screen and (max-width: 1080px){
+                            font-size: 50px;
+                        }
+                        @media only screen and (max-width: 700px) {
+                            font-size: 25px;
+                        }
+                        @media only screen and (max-width: 340px){
+                            font-size: 19px;
+                        }
+                    }
+
+                    &:hover {
+                        background-size: 120% 120%;
+                        transition: 500ms;
+                        .abusate-transparent {
+                            opacity: 0.7;
+                            transition: 500ms;
+                            z-index: 1;
+                        }
+
+                        .portfolio-title {
+                            transform: translateY(222px);
+                            transition: 500ms;
+                            @media only screen and (max-width: 1080px) {
+                                transform: translateY(195px);
+                            }
+                            @media only screen and (max-width: 880px) {
+                                transform: translateY(170px);
+                            }
+                            @media only screen and (max-width: 700px) {
+                                transform: translateY(145px);
+                            }
+                            @media only screen and (max-width: 340px){
+                                transform: translateY(115px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

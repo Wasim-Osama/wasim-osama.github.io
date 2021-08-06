@@ -1,0 +1,82 @@
+.about-main-body{
+    display: block;
+    width: 100%;
+    .fa-user{
+        color: $secondary-color!important;
+    }
+    .main-content {
+        display: block;
+        width: calc(100% - 400px);
+        float: left;
+        margin-left: 400px;
+        @media only screen and (max-width: 1200px) {
+            width: 100%;
+            margin: 0;
+        }
+            .img-and-text{
+                width: 100%;
+                height: 100vh;
+                .banner{
+                    width: 100%;
+                    height: 500px;
+                    @media only screen and (max-width: 720px) {
+                        height: 280px;
+                        width: 80%;
+                        margin: auto;
+                    }
+                    .banner-img{
+                        width: 100%;
+                        height: 500px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        @media only screen and (max-width: 720px) {
+                            height: 280px;
+                            width: 80%;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+            .details{
+                width: 100%;
+                .description{
+                    .head{
+                        font-size:  30px;
+                        font-weight: bold;
+                        padding: 30px 0;
+                        margin: 0;
+                    }
+                    .paragraph{
+                        color: $secondary-color;
+                        padding-bottom: 30px;
+                    }
+                }
+                .info{
+                    display: grid;
+                    grid-template-columns: 27% 73%;
+                    width: 100%;
+                    padding: 120px 0 0 30px;
+                    line-height: 25px;
+                    @media only screen and (max-width: 720px) {
+                        padding: 25px 0 0 0!important;
+                        margin: 0;
+                    }
+                    @media only screen and (max-width: 480px) {
+                        font-size: 16px;
+                    }
+                    @media only screen and (max-width: 320px) {
+                        font-size: 11px;
+                    }
+                    .info-question{
+                        color: $global-color;
+                        font-weight: 500;
+                    }
+                    .info-answer{
+                        color: $secondary-color;
+                    }
+
+                }
+            }
+    }
+}

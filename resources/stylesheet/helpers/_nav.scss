@@ -1,0 +1,93 @@
+/*////////////top-nav//////////*/
+.top-nav{
+    display: none;
+    width: 100%;
+    background-color: #000000;
+    justify-content: space-between;
+    padding: 10px 5%;
+    @media only screen and (max-width: 1200px) {
+        display: flex;
+    }
+    .logo{
+        font-size: 22px;
+        color: $global-color;
+    }
+    .nav-icon{
+        display: block;
+        a{
+            font-size: 18px;
+            text-decoration: none;
+            padding-right: 20px;
+            color: $global-color;
+        }
+        .fa-home {
+            font-size: 25px;
+        }
+        .fa-user{
+            font-size: 23px;
+        }
+        .fa-briefcase{
+            font-size: 21px;
+        }
+    }
+}
+/*////////////End of top-nav//////////*/
+/*////////////////side nav/////////////////*/
+.side-nav {
+    position: fixed;
+    display: flex;
+    width: 400px;
+    height: 100vh;
+    background-color: #000000;
+    align-items: center;
+    padding: 0 100px;
+    float: left;
+    @media only screen and (max-width: 1200px) {
+        display: none;
+    }
+    .nav-bar {
+        display: block;
+
+        .nav-head {
+            font-size: 30px;
+            color: $global-color;
+            padding: 15px 0;
+        }
+
+        .nav-items {
+            list-style: none;
+            padding-bottom: 30px;
+
+            li {
+                padding: 5px 0;
+
+                a {
+                    font-size: 18px;
+                    color: $secondary-color;
+                    text-decoration: none;
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .copyright-text {
+            color: $secondary-color;
+            span{
+                font-size: 15px;
+                color: #B03238;
+            }
+
+            a {
+                text-decoration: none;
+                color: $secondary-color;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+/*///////End of side-nav////////////*/

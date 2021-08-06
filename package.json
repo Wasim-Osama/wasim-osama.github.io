@@ -1,19 +1,20 @@
 {
-  "name": "wsm-007.github.io",
+  "name": "portfollio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch resources/stylesheet/style.scss:assets/css/style.min.css"
+    "style": "sass --watch resources/stylesheet/style.scss:assets/css/style.min.css --style compressed"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wsm-007/wsm-007.github.io.git"
+    "url": "git+https://github.com/wsm-007/portfolliio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wsm-007/wsm-007.github.io/issues"
+    "url": "https://github.com/wsm-007/portfolliio/issues"
   },
-  "homepage": "https://github.com/wsm-007/wsm-007.github.io#readme"
+  "homepage": "https://github.com/wsm-007/portfolliio#readme"
 }
+
