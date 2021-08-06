@@ -1,0 +1,19 @@
+{
+  "name": "wsm-007.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch resources/stylesheet/style.scss:assets/css/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsm-007/wsm-007.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsm-007/wsm-007.github.io/issues"
+  },
+  "homepage": "https://github.com/wsm-007/wsm-007.github.io#readme"
+}
