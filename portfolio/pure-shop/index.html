@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>pure shop</title>
+    <title>Pure Shop</title>
     <link rel="stylesheet" href="asset/css/style.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500;600;700&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
                     <div class="text p border-right">01997714599</div>
                     <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
                     </div>
-                    <div class="text p mail">pureshop007@gmail.com</div>
+                    <div class="text p mail">contact@pureshop.com</div>
                 </div>
                 <!--/INFO-->
                 <!--social link-->
@@ -55,25 +55,24 @@
         </div>
     </section>
     <!--//TOP-BAR-->
-    <!--HEADER-->
-    <div id="nav" class="main-nav-bar">
+    <!--navbar-->
+    <header class="main-nav-bar nav-scroller">
         <section class="container">
-            <header class="home-header">
-                <div class="logo">
+            <section class="home-header">
+                <a href="index.html" class="logo">
                     <img src="asset/img/logo.png" alt="logo">
-                </div>
+                </a>
                 <nav class="navbar navbar-light">
                     <ul class="nav">
-                        <li class="nav-item"><a class="nav-link text-dark active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark active" href="index.html">Home</a></li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">
+                            <a class="nav-link text-dark" href="shop.html">
                                 Shop
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link text-dark" href="#">Deal of the day</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" href="#">Pages <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="deal_oftheday.html">Deal of the day</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="aboutUs.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </nav>
                 <section class="nav-icon">
@@ -81,10 +80,23 @@
                     <a class="fa fa-shopping-cart" aria-hidden="true"></a>
                     <a class="fa fa-user" aria-hidden="true"></a>
                 </section>
-            </header>
+            </section>
+        </section>
+    </header>
+    <!--toggle nav-->
+    <div class="toggle-nav nav-scroller">
+        <section class="container">
+            <section class="responsive-toggle-nav">
+                <div class="logo">
+                    <img src="asset/img/logo.png" alt="logo">
+                </div>
+                <section class="toggle-bar">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </section>
+            </section>
         </section>
     </div>
-    <!--/HEADER-->
+    <!--/navbar-->
     <!--filter-bar-->
     <div class="container">
         <section class="filter-bar">
@@ -452,47 +464,83 @@
 <!--/page-2-->
 <!--footer-->
 <footer class="footer" style="background-image: url('asset/img/phone-store.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3 text-center">
-                <div class="h4 h font-weight-bold text-white">
-                    YOUR ACCOUNT
-                </div>
-                <div class="p text-light">Personal info</div>
-                <div class="p text-light">Order</div>
-                <div class="p text-light">Credit slips</div>
-                <div class="p text-light">Addresses</div>
+    <!--navigated-overlay-->
+    <div class="navigate-bar-overlay">
+        <div class="shipping-info">
+            <i class="fa fa-truck float-left" aria-hidden="true"></i>
+            <div class="text h float-left">
+                Free shipping<br>
+            <span class="p">All over the country</span>
             </div>
-            <div class="col-sm-3 text-center">
-                <div class="h4 h font-weight-bold text-light">
-                    YOUR ACCOUNT
-                </div>
-                <div class="p text-light">Personal info</div>
-                <div class="p text-light">Order</div>
-                <div class="p text-light">Credit slips</div>
-                <div class="p text-light">Addresses</div>
+        </div>
+        <div class="shipping-info">
+            <i class="fa fa-phone float-left" aria-hidden="true"></i>
+            <div class="text h float-left">
+                Helpline<br>
+                <span class="p">(+880) 9977-14599</span>
             </div>
-            <div class="col-sm-3 text-center">
-                <div class="h4 h font-weight-bold text-light">
-                    YOUR ACCOUNT
-                </div>
-                <div class="p text-light">Personal info</div>
-                <div class="p text-light">Order</div>
-                <div class="p text-light">Credit slips</div>
-                <div class="p text-light">Addresses</div>
+        </div>
+        <div class="shipping-info">
+            <i class="fa fa-headphones float-left" aria-hidden="true"></i>
+            <div class="text h float-left">
+                24x7 Support<br>
+                <span class="p">Free For Customer</span>
             </div>
-            <div class="col-sm-3 text-center">
-                <div class="h4 h font-weight-bold text-light">
-                    YOUR ACCOUNT
-                </div>
-                <div class="p text-light">Personal info</div>
-                <div class="p text-light">Order</div>
-                <div class="p text-light">Credit slips</div>
-                <div class="p text-light">Addresses</div>
+        </div>
+        <div class="shipping-info">
+            <i class="fa fa-retweet float-left" aria-hidden="true"></i>
+            <div class="text h float-left">
+                Return<br>
+                <span class="p">14 Days Free Exchange </span>
             </div>
         </div>
     </div>
+    <!--/navigated-overlay-->
+    <!--overlay-->
+    <div class="overlay"></div>
+    <!--/overlay-->
+    <!--footer-main-content-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 text-center">
+                <div class="h4 h font-weight-bold text-white pb-4">
+                    YOUR ACCOUNT
+                </div>
+                <a class="p text-light pb-1 cursor-pointer">Personal info</a><br>
+                <a class="p text-light pb-1 cursor-pointer">Order</a><br>
+                <a class="p text-light pb-1 cursor-pointer">Credit slips</a><br>
+                <a class="p text-light pb-1 cursor-pointer">Addresses</a>
+            </div>
+            <div class="col-sm-3 text-center">
+                <div class="h4 h font-weight-bold text-light">
+                    CUSTOMER SERVICE
+                </div>
+                <div class="p text-light pb-1">Monday to Friday</div>
+                <div class="p text-light pb-1">10am - 6.30pm (Dhaka time)</div>
+                <div class="p text-light pb-1">01997714599</div>
+                <a class="p text-light pb-1 cursor-pointer">contact@pureshop.com</a>
+            </div>
+            <div class="col-sm-3 text-center">
+                <div class="h4 h font-weight-bold text-light pb-4">
+                    OUR GUARANTEES
+                </div>
+                <div class="p text-light pb-1">Shipping in 3 days</div>
+                <div class="p text-light pb-1">Free returns within 14 days</div>
+                <div class="p text-light pb-1">Secure payments</div>
+            </div>
+            <div class="col-sm-3 text-center">
+                <div class="h4 h font-weight-bold text-light pb-4">
+                    OUR COMPANY
+                </div>
+                <a class="p text-light pb-1 cursor-pointer">Delivery</a><br>
+                <a class="p text-light pb-1 cursor-pointer">Legal Notice</a><br>
+                <a class="p text-light pb-1 cursor-pointer">About Us</a><br>
+                <a class="p text-light pb-1 cursor-pointer">Contact Us</a><br>
+                <a class="p text-light pb-1 cursor-pointer">Terms and conditions of use</a>
+            </div>
+        </div>
+    </div>
+    <!--footer-main-content-->
 </footer>
 <!--footer-->
 </body>
