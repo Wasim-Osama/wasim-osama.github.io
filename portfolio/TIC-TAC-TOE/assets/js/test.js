@@ -30,14 +30,14 @@ function winnerChk(){
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').html(v[0] + ' ' + 'You Win' );
+         $('#win-msg').html(v[3] + ' ' + 'You Win' );
     }
     else if (v[6] !=='' && v[6] === v[7] && v[7] === v[8]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').html(v[0] + ' ' + 'You Win' );
+         $('#win-msg').html(v[6] + ' ' + 'You Win' );
     }
     else if (v[0] !=='' && v[0] === v[3] && v[3] === v[6]){
         $('.win-overlay').css({
@@ -51,14 +51,14 @@ function winnerChk(){
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').html(v[0] + ' ' + 'You Win' );
+         $('#win-msg').html(v[1] + ' ' + 'You Win' );
     }
     else if (v[2] !=='' && v[2] === v[5] && v[5] === v[8]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').html(v[0] + ' ' + 'You Win' );
+         $('#win-msg').html(v[2] + ' ' + 'You Win' );
     }
     else if (v[0] !=='' && v[0] === v[4] && v[4] === v[8]){
         $('.win-overlay').css({
@@ -72,7 +72,7 @@ function winnerChk(){
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').html(v[0] + ' ' + 'You Win' );
+         $('#win-msg').html(v[2] + ' ' + 'You Win' );
     }
     else if (v[0] !=='' && v[1] !=='' && v[2] !==''  && v[3] !==''  && v[4] !==''  && v[5] !=='' && v[6] !==''  && v[7] !==''  && v[8] !==''){
         $('.draw-overlay').css({
@@ -80,4 +80,17 @@ function winnerChk(){
             'transition' : '800ms'
         });
     }
+}
+function replay(){
+    v = ['','','','','','','','',''];
+    ticToe = "";
+    $('.box').html('');
+    $('.draw-overlay').css({
+        'transform' : 'translateY(-200%)',
+        'transition' : '800ms'
+    });
+    $('.win-overlay').css({
+        'transform': 'translateY(-200%)',
+        'transition' : '800ms'
+    });
 }
