@@ -16,7 +16,6 @@ function tokaMaro(box){
         }
     }
     winnerChk();
-    drawChk();
 }
 function winnerChk(){
     if (v[0] !=='' && v[0] === v[1] && v[1] === v[2]){
@@ -24,60 +23,58 @@ function winnerChk(){
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-        $('#win-msg').prepend(v[0] +' ');
+        $('#win-msg').html(v[0] + ' ' + 'You Win' );
     }
-    if (v[3] !=='' && v[3] === v[4] && v[4] === v[5]){
+    else if (v[3] !=='' && v[3] === v[4] && v[4] === v[5]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').prepend(v[3] +' ');
+         $('#win-msg').html(v[0] + ' ' + 'You Win' );
     }
-    if (v[6] !=='' && v[6] === v[7] && v[7] === v[8]){
+    else if (v[6] !=='' && v[6] === v[7] && v[7] === v[8]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').prepend(v[6] +' ');
+         $('#win-msg').html(v[0] + ' ' + 'You Win' );
     }
-    if (v[0] !=='' && v[0] === v[3] && v[3] === v[6]){
+    else if (v[0] !=='' && v[0] === v[3] && v[3] === v[6]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').prepend(v[0] +' ');
+         $('#win-msg').html(v[0] + ' ' + 'You Win' );
     }
-    if (v[1] !=='' && v[1] === v[4] && v[4] === v[7]){
+    else if (v[1] !=='' && v[1] === v[4] && v[4] === v[7]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').prepend(v[1] +' ');
+         $('#win-msg').html(v[0] + ' ' + 'You Win' );
     }
-    if (v[2] !=='' && v[2] === v[5] && v[5] === v[8]){
+    else if (v[2] !=='' && v[2] === v[5] && v[5] === v[8]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').prepend(v[2] +' ');
+         $('#win-msg').html(v[0] + ' ' + 'You Win' );
     }
-    if (v[0] !=='' && v[0] === v[4] && v[4] === v[8]){
+    else if (v[0] !=='' && v[0] === v[4] && v[4] === v[8]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').prepend(v[0] +' ');
+         $('#win-msg').html(v[0] + ' ' + 'You Win' );
     }
-    if (v[2] !=='' && v[2] === v[4] && v[4] === v[6]){
+    else if (v[2] !=='' && v[2] === v[4] && v[4] === v[6]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
             'transition' : '800ms'
         });
-         $('#win-msg').prepend(v[2] +' ');
+         $('#win-msg').html(v[0] + ' ' + 'You Win' );
     }
-}
-function drawChk(){
-    if (v[0] !=='' && v[1] !=='' && v[2] !==''  && v[3] !==''  && v[4] !==''  && v[5] !=='' && v[6] !==''  && v[7] !==''  && v[8] !==''){
+    else if (v[0] !=='' && v[1] !=='' && v[2] !==''  && v[3] !==''  && v[4] !==''  && v[5] !=='' && v[6] !==''  && v[7] !==''  && v[8] !==''){
         $('.draw-overlay').css({
             'transform' : 'translateY(0)',
             'transition' : '800ms'
