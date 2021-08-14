@@ -1,23 +1,27 @@
+let clickCheck = 0;
 let v = ['','','','','','','','',''];
 let ticToe = "";
 function tokaMaro(box){
     let checkBox = $('.box-'+box).html();
-    console.log(checkBox);
-    if (checkBox === ""){
-        if (ticToe === 'O'){
-            $('.box-'+box).html('<div class="element cross">X</div>');
-            ticToe = 'X';
-            v[box] = ticToe;
+    if (clickCheck === 0){
+        if (checkBox === ""){
+            if (ticToe === 'O'){
+                $('.box-'+box).html('<div class="element cross">X</div>');
+                ticToe = 'X';
+                v[box] = ticToe;
+            }
+            else {
+                $('.box-'+box).html('<div class="element zero">O</div>');
+                ticToe ='O';
+                v[box] = ticToe;
+            }
         }
-        else {
-            $('.box-'+box).html('<div class="element zero">O</div>');
-            ticToe ='O';
-            v[box] = ticToe;
-        }
+        winnerChk();
     }
-    winnerChk();
 }
 function winnerChk(){
+    clickCheck = 1;
+    console.log(clickCheck);
     if (v[0] !=='' && v[0] === v[1] && v[1] === v[2]){
         $('.win-overlay').css({
             'transform': 'translateY(0)',
@@ -80,6 +84,10 @@ function winnerChk(){
             'transition' : '800ms'
         });
     }
+    setTimeout(function (){
+        clickCheck = 0;
+    },700);
+
 }
 function replay(){
     v = ['','','','','','','','',''];
