@@ -12,6 +12,16 @@
 </head>
 <body>
     <section class="full-body">
+        <div class="overlay">
+            <div class="result-overlay win-overlay" style="background-image: url('assets/img/win.png')">
+                <div id="win-msg" class="result-msg">You WiN</div>
+                <div class="reply-btn" onclick="replay()">Play Again</div>
+            </div>
+            <div class="result-overlay draw-overlay" style="background-image: url('assets/img/draw.png')">
+                <div id="draw-msg" class="result-msg">Match Draw</div>
+                <div class="reply-btn" onclick="replay()">Play Again</div>
+            </div>
+        </div>
         <h1 class="head">Tic-Toc~Toe</h1>
         <section class="main-box">
             <section class="box box-0" onclick="tokaMaro(0)"></section>
@@ -23,15 +33,7 @@
             <section class="box box-6" onclick="tokaMaro(6)"></section>
             <section class="box box-7" onclick="tokaMaro(7)"></section>
             <section class="box box-8" onclick="tokaMaro(8)"></section>
-            <div class="overlay" style="background-image: url('assets/img/pngwing.com.png')"></div>
-            <div class="result-overlay win-overlay" style="background-image: url('assets/img/win.png')">
-                <div id="win-msg" class="result-msg">You WiN</div>
-                <div class="reply-btn" onclick="replay()">Play Again</div>
-            </div>
-            <div class="result-overlay draw-overlay" style="background-image: url('assets/img/draw.png')">
-                <div id="draw-msg" class="result-msg">Match Draw</div>
-                <div class="reply-btn" onclick="replay()">Play Again</div>
-            </div>
+            <div class="overlay-2" style="background-image: url('assets/img/pngwing.com.png')"></div>
         </section>
     </section>
 </body>
