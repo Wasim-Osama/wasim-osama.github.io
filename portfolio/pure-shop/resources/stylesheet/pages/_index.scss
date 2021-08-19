@@ -111,6 +111,10 @@
         .nav-icon{
             a{
                 padding-right: 20px;
+                &:hover{
+                    color: $hover-color!important;
+                    transition: 400ms;
+                }
             }
         }
     }

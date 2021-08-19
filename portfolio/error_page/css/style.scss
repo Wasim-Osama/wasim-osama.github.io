@@ -1,0 +1,101 @@
+/*personal view*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/*personal view*/
+.error_page{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    .text-side{
+        display: flex;
+        width: 100%;
+        max-width: 900px;
+        float: left;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @media only screen and (max-width: 1280px){
+            max-width: 100%;
+        }
+        .title{
+            font-size: 180px;
+            color: #20bead;
+            font-weight: bold;
+            line-height: 70px;
+            padding-bottom: 25px;
+            @media only screen and (max-width: 640px){
+                font-size: 150px;
+            }
+            @media only screen and (max-width: 414px){
+                font-size: 135px;
+                line-height: 50px;
+            }
+            @media only screen and (max-width: 320px){
+                font-size: 130px;
+            }
+            .small-title{
+                font-size: 75px;
+                color: #454545;
+                @media only screen and (max-width: 640px){
+                    font-size: 63px;
+                }
+                @media only screen and (max-width:414px){
+                    font-size: 56px;
+                }
+                @media only screen and (max-width:320px){
+                    font-size: 53px;
+                }
+            }
+        }
+        .btn{
+            display: block;
+            padding: 20px 15px;
+            background-color: #20bead;
+            color: #f8f8f8;
+            font-size: 20px;
+            border: none;
+            font-weight: bold;
+            margin: auto;
+            border-radius: 5px;
+            transition: 500ms;
+            cursor: pointer;
+
+            @media only screen and (max-width: 640px){
+                font-size: 18px;
+            }
+            @media only screen and (max-width: 414px){
+                font-size: 16px;
+            }
+            @media only screen and (max-width: 320px){
+                font-size: 14px;
+            }
+            &:hover{
+                background-color: #454545;
+                transition: 500ms;
+            }
+        }
+    }
+    .picture-side{
+        display: flex;
+        width: calc(100% - 900px);
+        background-color: #20bead;
+        border-radius: 80px 0px 0px 80px / 90px 0px 0px 90px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        @media only screen and (max-width: 1280px){
+            display: none;
+        }
+        .img{
+            display: block;
+            width: 500px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

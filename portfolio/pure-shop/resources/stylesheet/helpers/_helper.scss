@@ -24,3 +24,6 @@ $black: #3c3636;
 .cursor-pointer{
     cursor: pointer;
 }
+.selected{
+    color: $hover-color!important;
+}
