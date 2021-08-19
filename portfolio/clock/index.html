@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="asset/css/style.min.css">
+    <script src="asset/js/jquery-3.6.0.min.js"></script>
+    <title>Clock</title>
+</head>
+<body>
+    <!--Main-->
+    <main class="main-body pt-4">
+        <!--title-->
+        <header class="title  text-center font-weight-bold">
+            <h1 class="head h1 text-light">
+                Clock
+            </h1>
+            <p class="slogan text-light">
+                “time and tide wait for none“
+            </p>
+        </header>
+        <!--title-->
+        <!--clock section-->
+        <div class="hide-btn">
+            <div class="row">
+                <div class="col-sm-3 col-6 mb-2"><a class="btn btn-sm btn-dark text-center d-flex justify-content-center text-white">Stop Watch</a></div>
+                <div class="col-sm-3 col-6 mb-2"><a class="btn btn-sm btn-dark text-center d-flex justify-content-center text-white">Count Down</a></div>
+                <div class="col-sm-3 col-6 mb-2"><a class="btn btn-sm btn-dark text-center d-flex justify-content-center text-white">Stop Watch</a></div>
+                <div class="col-sm-3 col-6 mb-2"><a class="btn btn-sm btn-dark text-center d-flex justify-content-center text-white">Count Down</a></div>
+            </div>
+        </div>
+        <section class="clock-section">
+            <!--side-btn-->
+            <section class="side-btn">
+                <button class="btn btn-dark btn-block text-center">Stop Watch</button>
+                <button class="btn btn-dark btn-block text-center">Count Down</button>
+            </section>
+            <!--side-btn-->
+            <section class="clock" style="background-image: url('asset/img/clock.png')">
+                    <div class="arrow-overlay">
+                        <div class="hr-arrow arrow"></div>
+                        <div class="min-arrow arrow"></div>
+                        <div class="sec-arrow arrow"></div>
+                        <div class="circle"></div>
+                    </div>
+            </section>
+            <!--side-btn-->
+            <section class="side-btn">
+                <button class="btn btn-dark btn-block text-center">Stop Watch</button>
+                <button class="btn btn-dark btn-block text-center">Count Down</button>
+            </section>
+            <!--side-btn-->
+        </section>
+        <!--clock section-->
+    </main>
+    <!--Main-->
+</body>
+<script src="asset/js/app.js"></script>
+</html>
