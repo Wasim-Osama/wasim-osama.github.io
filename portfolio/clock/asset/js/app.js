@@ -1,52 +1,71 @@
-setInterval(function (){
-    setTimeout();
-});
-function setTimeout(){
+function setTimeout() {
     let day = new Date();
     let hours = day.getHours();
     let min = day.getMinutes();
     let seconds = day.getSeconds();
-    const secCount = (seconds*6);
-    $('.sec-arrow').css('transform','rotate('+secCount+'deg)');
-    const minCount = (min*6);
-    $('.min-arrow').css('transform' , 'rotate('+minCount+'deg)');
-    const hrCount = (hours*30);
-    $('.hr-arrow').css('transform' , 'rotate('+hrCount+'deg)');
+    const secCount = (seconds * 6);
+    $('.sec-arrow').css('transform', 'rotate(' + secCount + 'deg)');
+    const minCount = (min * 6);
+    $('.min-arrow').css('transform', 'rotate(' + minCount + 'deg)');
+    const hrCount = (hours * 30);
+    $('.hr-arrow').css('transform', 'rotate(' + hrCount + 'deg)');
 }
-function bgChng(){
+function bgChng() {
     let day = new Date();
     let hours = day.getHours();
     console.log(hours);
-    if (hours >= 5 && hours <= 7){
-        $('body').addClass( 'early-morning');
-    }
-    else if (hours >= 7 && hours <= 10){
-        $('body').addClass('morning');
-    }
-    else if (hours >= 10 && hours <= 14){
-        $('body').addClass('noon');
-    }
-    else if (hours >= 14 && hours <= 16){
-        $('body').addClass('afternoon');
-    }
-    else if (hours >= 16 && hours <= 17){
-        $('body').addClass('afternoon-2');
-    }
-    else if (hours >= 17 && hours <= 19){
-        $('body').addClass('sunset');
-    }
-    else if (hours >= 19 && hours <= 24){
-        $('body').addClass('night');
-    }
-    else if (hours >= 0 && hours <= 5){
-        $('body').addClass('night');
+    if (hours >= 5 && hours <= 7) {
+        $('.main-body').addClass('early-morning');
+    } else if (hours >= 7 && hours <= 10) {
+        $('.main-body').addClass('morning');
+    } else if (hours >= 10 && hours <= 14) {
+        $('.main-body').addClass('noon');
+    } else if (hours >= 14 && hours <= 16) {
+        $('.main-body').addClass('afternoon');
+    } else if (hours >= 16 && hours <= 17) {
+        $('.main-body').addClass('afternoon-2');
+    } else if (hours >= 17 && hours <= 19) {
+        $('.main-body').addClass('sunset');
+    } else if (hours >= 19 && hours <= 24) {
+        $('.main-body').addClass('night');
+    } else if (hours >= 0 && hours <= 5) {
+        $('.main-body').addClass('night');
     }
 }
-bgChng();
-setInterval(function (){
-    bgChng();
-    },36000);
+function getCovidData(){
+    $.ajax({
+        url: 'https://author.bangladeshimuslimkids.com/api/v1.0/covid-19',
+        type: 'POST',
+        headers: {
+            'api-key':'@@__cmrdmhmd__@@'
+        },
+        data: {},
+        success: function (res){
+            res = JSON.parse(res);
+            console.log(res);
+            $('.v_to_total_case').html(res.todayCases);
+            $('.v_to_total_death').html(res.todayDeaths);
+            $('.v_active_cases').html(res.active);
+            $('.v_total_cases').html(res.cases);
+            $('.v_critical_case').html(res.critical);
+            $('.v_total_death').html(res.deaths);
+            $('.v_total_tests').html(res.tests);
+            $('.v_total_recovered').html(res.recovered)
+        }
+    });
+}
 
+$(document).ready(function (){
+    bgChng();
+    getCovidData();
+});
+
+setInterval(function () {
+    bgChng();
+}, 36000);
+setInterval(function () {
+    setTimeout();
+});
 
 
 

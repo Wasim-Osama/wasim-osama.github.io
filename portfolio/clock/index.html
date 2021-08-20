@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="asset/css/style.min.css">
-    <script src="asset/js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <title>Clock</title>
 </head>
 <body>
@@ -55,7 +55,48 @@
         </section>
         <!--clock section-->
     </main>
-    <!--Main-->
+    <!--/Main--->
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title h2 text-warning font-weight-bold text-center pb-5">
+                        Corona Virus Update
+                    </div>
+                    <table class="table text-light font-weight-bold">
+                        <tbody class="border-bottom border-light">
+                        <tr>
+                            <td class="text-danger font-weight-light h4 py-3">Today's total cases</td>
+                            <td class="text-danger font-weight-light h4 py-3"><span class="v_to_total_case"></span></td>
+                            <td class="text-danger font-weight-light h4 py-3">Today's total deaths</td>
+                            <td class="text-danger font-weight-light h4 py-3"><span class="v_to_total_death"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-light font-weight-light h4 py-3">Active Cases</td>
+                            <td class="text-light font-weight-light h4 py-3"><span class="v_active_cases"></span></td>
+                            <td class="text-light font-weight-light h4 py-3">Total Cases</td>
+                            <td class="text-light font-weight-light h4 py-3"><span class="v_total_cases"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-light font-weight-light h4 py-3">Critical Cases</td>
+                            <td class="text-light font-weight-light h4 py-3"><span class="v_critical_case"></span></td>
+                            <td class="text-light font-weight-light h4 py-3">Total Death</td>
+                            <td class="text-light font-weight-light h4 py-3"><span class="v_total_death"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="text-light font-weight-light h4 py-3">Total Tests</td>
+                            <td class="text-light font-weight-light h4 py-3"><span class="v_total_tests"></span></td>
+                            <td class="text-light font-weight-light h4 py-3">Total Recovered</td>
+                            <td class="text-light font-weight-light h4 py-3"><span class="v_total_recovered"></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
 </body>
 <script src="asset/js/app.js"></script>
 </html>
