@@ -1,0 +1,71 @@
+/*red theme*/
+$bg-red : linear-gradient(341deg, rgba(174,49,55,0.9724264705882353) 6%, rgba(214,36,50,1) 27%, rgba(220,53,69,1) 52%, rgba(47,5,5,1) 100%);
+$bg-red-reverse : linear-gradient(170deg, rgba(174,49,55,0.9724264705882353) 6%, rgba(214,36,50,1) 27%, rgba(220,53,69,1) 52%, rgba(47,5,5,1) 100%);
+$btn-red :#FF5769;
+$btn-red-1 :#D73E44;
+
+
+
+
+
+//////
+.bg-btn-red-1{
+  background: $btn-red-1!important;
+  color: #ffffff;
+}
+.bg-btn-red-2{
+  background-color: $btn-red;
+}
+.red-login-theme-1{
+  display: table;
+  width: 700px;
+  position: absolute;
+  height: 420px;
+  top: 200px;
+  right: 96px;
+  background-image: url(../img/login-red.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.red-forget-theme-1 {
+  display: table;
+  width: 700px;
+  position: absolute;
+  height: 500px;
+  top: 200px;
+  right: 96px;
+  background-image: url(../img/forget-red.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.red-reset-theme-1{
+  display: table;
+  width: 700px;
+  position: absolute;
+  height: 500px;
+  top: 200px;
+  right: 96px;
+  background-image: url(../img/reset-red.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+.red-foot-theme-1{
+   display: table;
+   width: 223px;
+   position: absolute;
+   height: 167px;
+   bottom: 0;
+   right: 0;
+   background-image: url(../img/red-foot.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   z-index: -1;
+}
+
