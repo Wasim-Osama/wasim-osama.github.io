@@ -1,0 +1,29 @@
+$theme-color: #f4cc46;
+$hover-color:#FF851D;
+$white: #efefef;
+$black: #3c3636;
+.btn{
+    font-family: 'Lemonada', cursive!important;
+}
+.nav{
+    font-family: 'Lemonada', cursive!important;
+}
+.h{
+    font-family: 'Lemonada', cursive!important;
+}
+.orange-overlay{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 175px;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.selected{
+    color: $hover-color!important;
+}
