@@ -37,7 +37,6 @@
                 display: grid;
                 width: 100%;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
                 grid-gap: 45px 45px;
                 @media only screen and (max-width: 700px) {
                     grid-template-columns: 1fr;
@@ -108,7 +107,6 @@
                             transition: 500ms;
                             z-index: 1;
                         }
-
                         .portfolio-title {
                             transform: translateY(222px);
                             transition: 500ms;
@@ -127,6 +125,9 @@
                         }
                     }
                 }
+            }
+            a{
+                text-decoration: none;
             }
         }
     }
