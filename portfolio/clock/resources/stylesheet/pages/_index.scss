@@ -110,8 +110,9 @@
                 z-index: 10;
                 transform-origin: bottom;
                 @media only screen and (max-width: 620px){
-                    top: 50px;
+                    top: 77px;
                     left: 165px;
+                    height: 100px;
                 }
                 @media only screen and (max-width: 360px){
                     top: 70px;
@@ -156,6 +157,12 @@
                     left: 170px;
                     width: 4px;
                     height: 150px;
+                }
+                @media only screen and (max-width: 360px){
+                    top: 24px;
+                    left: 149px;
+                    width: 4px;
+                    height: 130px;
                 }
                 @media only screen and (max-width: 320px){
                     top: 30px;
