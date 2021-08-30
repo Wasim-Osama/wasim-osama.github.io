@@ -157,6 +157,43 @@
             color: $theme-color;
         }
     }
+    .side-bar{
+        transition: all .5s ease-in;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        top: -80px;
+        right: 0;
+        background: #fff;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        &.active{
+            opacity: 1;
+            visibility: visible;
+            transition: all .5s ease-in;
+        }
+        .cross-btn{
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            .fa{
+                font-size: 65px;
+            }
+        }
+        .nav{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            li{
+                padding: 20px 0;
+                font-size: 20px;
+            }
+        }
+    }
 }
 /*/header*/
 /*filter*/
@@ -234,6 +271,17 @@
          transform: rotate(
                          22deg
          );
+         @media only screen and (max-width: 1414px) {
+             width: auto;
+             display: block;
+             text-align: center;
+              transform: rotate(
+                              0deg
+              );
+             background-color: #00000042;
+             margin: auto;
+             padding: 15px;
+         }
          .p{
              color: $white;
              font-size: 20px;

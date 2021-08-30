@@ -1,0 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+body{
+    background-image: repeating-linear-gradient(264deg, rgba(0,214,199, 0.18) 0px, rgba(0,214,199, 0.18) 1px,transparent 1px, transparent 9px),repeating-linear-gradient(174deg, rgba(0,214,199, 0.18) 0px, rgba(0,214,199, 0.18) 1px,transparent 1px, transparent 9px),linear-gradient(219deg, rgb(77, 18, 84),rgb(52, 161, 185));
+}

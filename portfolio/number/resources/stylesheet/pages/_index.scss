@@ -1,0 +1,77 @@
+
+.main-body{
+    width: 100%;
+    display: block;
+    color: white;
+    .main-content{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .question-submit-box{
+            width: 33%;
+            display: block;
+            margin: 30px auto;
+            border: 1px solid rgba(184,174,166,0.73);
+            box-shadow: 0 0 15px 5px rgba(30,30,30,0.27);
+            padding: 20px 20px;
+            background: rgba(0, 0, 0, 0.4);
+            .input-box {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                padding-bottom: 30px;
+                input {
+                    font-size: 18px;
+                    padding: 18px 23px;
+                    outline: 0;
+                    background-color: #333333;
+                    color: #ffffff;
+                    &::placeholder{
+                        color: white;
+                    }
+                    &:focus {
+                        border: 1px solid rgba(68, 255, 210, 0.73);
+                    }
+                }
+            }
+            .chkbox-box{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
+            .btn{
+                padding: 15px 20px;
+                font-size: 15px;
+                font-weight: bold;
+                background-color: #333333;
+                width: 75px;
+                margin: 15px auto;
+                color: white;
+                display: table;
+                transition: 500ms;
+                border: none;
+                &:hover{
+                    background-color: #999999;
+                    transition: 500ms;
+                }
+            }
+        }
+        .result-text{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .ans-box{
+            width: 33%;
+            display: block;
+            margin: 30px auto;
+            border: 1px solid rgba(184,174,166,0.73);
+            box-shadow: 0 0 15px 5px rgba(30,30,30,0.27);
+            padding: 30px 20px;
+            background: rgba(0, 0, 0, 0.4);
+        }
+    }
+}

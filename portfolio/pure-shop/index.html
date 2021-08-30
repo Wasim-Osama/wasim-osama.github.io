@@ -83,17 +83,20 @@
         </section>
     </header>
     <!--toggle nav-->
-    <div class="toggle-nav nav-scroller">
+    <div class="toggle-nav">
         <section class="container">
             <section class="responsive-toggle-nav">
                 <div class="logo">
                     <img src="asset/img/logo.png" alt="logo">
                 </div>
-                <section class="toggle-bar">
+                <section class="toggle-bar" onclick="toggleNav()">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </section>
             </section>
             <section class="side-bar">
+                <div class="cross-btn" onclick="toggleNav()">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link text-dark active selected" href="index.html">Home</a></li>
                     <li class="nav-item">
@@ -104,8 +107,8 @@
                     <li class="nav-item"><a class="nav-link text-dark" href="deal_oftheday.html">Deal of the day</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="aboutUs.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="contact-us.html">Contact Us</a></li>
-                    <li class="nav-item  mr-2" ><a class="text-dark btn btn-outline-dark" href="">Login</a></li>
-                    <li class="nav-item"><a class="text-dark btn btn-outline-info" href="">Sing up</a></li>
+                    <li class="nav-item  mr-2" ><a class="text-dark btn btn-outline-dark btn-lg" href="">Login</a></li>
+                    <li class="nav-item"><a class="text-dark btn btn-outline-info btn-lg" href="">Sing up</a></li>
                 </ul>
             </section>
         </section>
@@ -515,7 +518,7 @@
     <!--footer-main-content-->
     <div class="container">
         <div class="row">
-            <div class="col-sm-3 text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-sm-4 text-center">
                 <div class="h4 h font-weight-bold text-white pb-4">
                     YOUR ACCOUNT
                 </div>
@@ -524,7 +527,7 @@
                 <a class="p text-light pb-1 cursor-pointer">Credit slips</a><br>
                 <a class="p text-light pb-1 cursor-pointer">Addresses</a>
             </div>
-            <div class="col-sm-3 text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-sm-4 text-center">
                 <div class="h4 h font-weight-bold text-light">
                     CUSTOMER SERVICE
                 </div>
@@ -533,7 +536,7 @@
                 <div class="p text-light pb-1">01997714599</div>
                 <a class="p text-light pb-1 cursor-pointer">contact@pureshop.com</a>
             </div>
-            <div class="col-sm-3 text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-sm-4 text-center">
                 <div class="h4 h font-weight-bold text-light pb-4">
                     OUR GUARANTEES
                 </div>
@@ -541,7 +544,7 @@
                 <div class="p text-light pb-1">Free returns within 14 days</div>
                 <div class="p text-light pb-1">Secure payments</div>
             </div>
-            <div class="col-sm-3 text-center">
+            <div class="col-lg-3 col-md-6 col-sm-12 pb-sm-4 text-center">
                 <div class="h4 h font-weight-bold text-light pb-4">
                     OUR COMPANY
                 </div>

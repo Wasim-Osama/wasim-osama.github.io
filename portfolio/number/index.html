@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="asset/css/style.min.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <section class="main-body">
+        <section class="main-content">
+            <section class="question-submit-box">
+                <div class="input-box">
+                    <input type="number" name="number1" class="number1 first-box" placeholder="First Number">
+                    <input type="number" name="number2"  class="number2 second-box" placeholder="Second Number">
+                </div>
+                <section class="chkbox-box">
+                    <div class="checkbox-div-1">
+                        <input checked type="radio" value="1" id="Even" name="action">
+                        <label for="Even">All Even</label>
+                    </div>
+                    <div class="checkbox-div-2">
+                        <input type="radio" value="2" id="odd" name="action">
+                        <label for="odd">All Odd</label>
+                    </div>
+                    <div class="checkbox-div-3">
+                        <input type="radio" value="3" id="prime"  name="action">
+                        <label for="prime">All Prime</label>
+                    </div>
+                </section>
+                <button class="btn" onclick="finalCalculation()" type="button">Print</button>
+            </section>
+            <div class="result-text">
+                Result:
+            </div>
+            <section class="ans-box">
+
+            </section>
+        </section>
+    </section>
+</body>
+
+<script src="asset/js/jquery-3.6.0.min.js"></script>
+<script src="asset/js/script.js"></script>
+
+
+</html>
