@@ -1,0 +1,21 @@
+$theme-red : rgb(200, 72, 53);
+$theme-red-hover : rgb(237, 94, 75);
+$theme-transparent-black : rgb(0,0,0,0.5);
+
+
+////
+.btn-theme-red{
+  background-color: $theme-red;
+  padding: 15px 30px;
+  transition: 500ms;
+  &:hover{
+    transition: 500ms;
+    background-color: $theme-red-hover;
+  }
+}
+.bg-theme{
+  background-color: $theme-red;
+}
+.text-theme{
+  color: $theme-red!important;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "medialogy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch resouces/stylesheet/style.scss:assets/css/style.min.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}

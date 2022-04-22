@@ -1,0 +1,29 @@
+.owl-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .owl-prev {
+    span {
+      font-size: 65px;
+      color: #fff;
+      background-color: $theme-transparent-black;
+      padding: 0 15px 10px 15px;
+    }
+  }
+
+  .owl-next {
+    span {
+      font-size: 65px;
+      color: #fff;
+      background-color: $theme-transparent-black;
+      padding: 0 15px 10px 15px;
+    }
+  }
+}
+a{
+  text-decoration: none!important;
+}
