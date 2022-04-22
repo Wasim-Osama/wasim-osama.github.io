@@ -20,28 +20,32 @@
     @media only screen and (max-width: 730px){
       font-size: 45px;
     }
+    @media only screen and (max-width: 580px){
+      font-size: 30px;
+    }
+
   }
 }
 .footer{
   .footer-content{
-    @media only screen and (max-width: 980px){
+    @media only screen and (max-width: 994px){
       flex-direction: column;
       justify-content: center!important;
       align-items: center;
     }
   }
   .copyright{
-    @media only screen and (max-width: 1094px){
-      font-size: 15px;
+    @media only screen and (max-width: 1200px){
+      font-size: 13px;
     }
   }
   .links{
     padding-right: 245px;
-    @media only screen and (max-width: 1094px){
+    @media only screen and (max-width: 1200px){
       padding-right: 200px;
     }
-    @media only screen and (max-width: 980px){
-      padding: 0;
+    @media only screen and (max-width: 994px){
+      padding: 20px 0;
     }
   }
 }
