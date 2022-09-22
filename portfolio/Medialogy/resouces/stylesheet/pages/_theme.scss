@@ -8,6 +8,7 @@ $theme-transparent-black : rgb(0,0,0,0.5);
   background-color: $theme-red;
   padding: 15px 30px;
   transition: 500ms;
+  font-size: 18px;
   &:hover{
     transition: 500ms;
     background-color: $theme-red-hover;

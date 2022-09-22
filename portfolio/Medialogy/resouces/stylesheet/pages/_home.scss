@@ -12,11 +12,12 @@
 }
 .home-page{
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   background: url("../img/home-bg.webp") no-repeat center;
   background-size: cover;
   margin-top: 100px;
   .head{
+    font-size: 64px;
     @media only screen and (max-width: 730px){
       font-size: 45px;
     }
@@ -24,6 +25,9 @@
       font-size: 30px;
     }
 
+  }
+  .slogan{
+    font-size: 24px;
   }
 }
 .footer{
