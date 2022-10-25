@@ -1,0 +1,88 @@
+.contactUs {
+  *{
+    cursor: url(../../../assets/img/turner-1.png), auto;
+  }
+  color: #d1d2d4;
+  display: block;
+  width: 100%;
+  background-image: repeating-linear-gradient(15deg, hsl(142, 0%, 8%) 0px, hsl(142, 0%, 8%) 12px, transparent 13px), repeating-linear-gradient(155deg, hsl(142, 0%, 8%) 0px, hsl(142, 0%, 8%) 12px, transparent 13px), linear-gradient(90deg, hsla(96, 0%, 71%, 1), hsla(111, 0%, 71%, 1));
+  animation: animate 50s infinite;
+  padding: 50px 0;
+  cursor: url(../../../assets/img/turner-1.png), auto;
+  .footer-content{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    .title{
+      font-size: 35px;
+      .title-icon{
+        padding-right: 12px;
+        color:  #666633;
+      }
+    }
+    .location{
+      padding: 8px 0;
+      .footer-icon{
+        padding-right: 12px;
+        color:  #666633;
+      }
+      .details{
+        cursor: pointer;
+        padding: 0 35px;
+        transition: 500ms;
+        &:hover{
+          color:  #666633;
+          transition: 500ms;
+        }
+      }
+    }
+    .contact{
+      padding: 8px 0;
+      .footer-icon{
+        padding-right: 12px;
+        color:  #666633;
+      }
+      .details{
+        padding: 0 35px;
+        transition: 500ms;
+        cursor: pointer;
+        &:hover{
+          color:  #666633;
+          transition: 500ms;
+        }
+      }
+    }
+    .socials{
+      padding: 8px 0;
+      .footer-icon{
+        padding-right: 12px;
+        color:  #666633;
+      }
+      .details{
+        padding: 0 35px;
+        transition: 500ms;
+        cursor: pointer;
+        &:hover{
+          color:  #666633;
+          transition: 500ms;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@keyframes animate {
+  0%{
+    background-position: 0;
+  }
+  50%{
+    background-position: 300px;
+  }
+  100%{
+    background-position: 0;
+  }
+}

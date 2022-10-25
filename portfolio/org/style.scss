@@ -11,15 +11,21 @@ nav{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-  title{
+  .title{
     font-size: 50px;
     @media only screen and (max-width: 768px){
       font-size: 30px;
+    }
+    @media only screen and (max-width: 480px){
+      font-size: 25px;
     }
   }
   .paragraph{
     @media only screen and (max-width: 768px){
       font-size: 13px;
+    }
+    @media only screen and (max-width: 480px){
+      font-size: 10px;
     }
   }
   .red-triangle{
@@ -45,7 +51,7 @@ nav{
     justify-content: center;
     position: relative;
     z-index: 1;
-    button{
+    .button{
       width: 200px;
       display: block;
       padding: 10px 0;

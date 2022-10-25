@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: url(../../../assets/img/turner.png),auto;
+  font-family: 'Quicksand', sans-serif;
+}
+.text-bold{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+.card-shadow{
+  box-shadow: 0 5px 45px -10px rgba(0,0,0,.2);
+}
+.shade{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+  transition: 500ms;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none!important;
+}
+.text-black{
+  color: #000000!important;
+}
+.margin-80{
+  display: block;
+  width: 100%;
+  height: 80px;
+}

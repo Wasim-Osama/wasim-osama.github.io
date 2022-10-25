@@ -1,0 +1,133 @@
+.about-me{
+  display: block;
+  width: 100%;
+  .homepage{
+    width: 100%;
+    display: block;
+    .homepage-content{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 80px;
+      @media only screen and (max-width: 480px) {
+        display: block;
+      }
+      .left-box{
+        width: 100%;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        @media only screen and (max-width: 480px) {
+          text-align: center;
+        }
+        .welcome-text{
+          font-size: 15px;
+          letter-spacing: 4px;
+          font-weight: bold;
+          @media only screen and (max-width: 320px) {
+            font-size: 12px;
+            letter-spacing: 2px;
+          }
+        }
+        .head{
+          color: #000000;
+          font-weight: bold;
+          font-size: 52px;
+          line-height: 65px;
+          padding: 25px 0;
+          font-family: 'Quicksand', sans-serif;
+          @media only screen and (max-width: 1024px) {
+            font-size: 40px;
+            line-height: 50px;
+          }
+          @media only screen and (max-width: 320px) {
+            font-size: 31px;
+            line-height: 37px;
+          }
+          .name-color{
+          }
+        }
+        .paragraph{
+          font-size: 18px;
+          line-height: 30px;
+          opacity: 0.9;
+          @media only screen and (max-width: 1024px) {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+        .find-me-section{
+          width: 100%;
+          display: table;
+          padding-top: 30px;
+          @media only screen and (max-width: 480px) {
+            padding-top: 50px;
+          }
+          .title{
+            font-weight: bold;
+          }
+          .icons{
+            padding-top: 15px;
+            @media only screen and (max-width: 480px) {
+              display: flex;
+              justify-content: center;
+              padding: 25px 0;
+            }
+            @media only screen and (max-width: 320px) {
+              font-size: 30px;
+            }
+            .each-icon{
+              font-size: 40px;
+              float: left;
+              padding: 0px 10px;
+              box-shadow: 5px 5px 15px aliceblue, -5px -5px 15px aliceblue;
+              margin-right: 20px;
+              border-radius: 8px;
+              transition: .5s;
+              &:hover{
+                background: aliceblue;
+                transition: .5s;
+                transform: translateY(-5px);
+              }
+              a{
+                background-color: transparent;
+                i{
+                  background-color: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+      .right-box{
+        width: 100%;
+        display: block;
+        @media only screen and (max-width: 480px) {
+          padding-top: 30px;
+        }
+        .img{
+          width: 450px;
+          border: 4px solid aliceblue;
+          border-radius: 10px;
+          @media only screen and (max-width: 480px) {
+            width: 350px;
+            display: block;
+            margin: auto;
+          }
+          img{
+            width: 100%;
+            background-color: transparent;
+            padding: 5px;
+            @media only screen and (max-width: 1024px) {
+              width: 70%;
+            }
+            @media only screen and (max-width: 480px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
